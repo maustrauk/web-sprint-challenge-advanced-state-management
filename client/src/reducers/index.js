@@ -1,8 +1,39 @@
+import { FETCHING_QUOTE_START, FETCHING_QUOTE_SUCCESS, FETCHING_QUOTE_FAIL, SET_ERROR } from './../actions';
 
 export const initialState = {
+    smurfs: [],
+    err: "",
+    isFetching: false
 }
 
-const reducer = ()=>{
+const reducer = (state = initialState, action)=>{
+    switch (action.type) {
+        case(FETCHING_QUOTE_START):
+        return ({
+            ...state,
+            isFetching: true,
+            err: ""
+        });
+        case(FETCHING_QUOTE_SUCCESS):
+        return({
+            ...state,
+            smurfs: action.payload,
+            isFetching: false
+        });
+        case(FETCHING_QUOTE_FAIL):
+        return({
+            ...state,
+            err: action.payload,
+            isFetching: false
+        })
+        case(SET_ERROR):
+        return({
+            ...state,
+            err: action.payload
+        })
+        default:
+            return state;
+    }
 }
 
 export default reducer;

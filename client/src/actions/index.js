@@ -1,5 +1,33 @@
 import axios from 'axios';
 
+export const FETCHING_QUOTE_START = 'FETCHING_QUOTE_START';
+export const FETCHING_QUOTE_SUCCESS = 'FETCHING_QUOTE_SUCCESS';
+export const FETCHING_QUOTE_FAIL = 'FETCHING_QUOTE_FAIL';
+export const SET_ERROR = 'SET_ERROR';
+
+export const getQuote = () => {
+    return (dispatch => {
+
+        dispatch({type:FETCHING_QUOTE_START});
+
+        axios
+            .get(`http://localhost:3333/smurfs`)
+            .then(res=> {
+                dispatch({type:FETCHING_QUOTE_SUCCESS, payload:res.data});
+            })
+            .catch(err => {
+                dispatch({type:FETCHING_QUOTE_FAIL, payload: err});
+            });
+    });
+}
+
+export const setError = (err) => {
+    return {
+        type: SET_ERROR,
+        payload: err
+    }
+}
+
 //Task List:
 //1. Add fetch smurfs action: 
 //              - fetch and return initial list of smurfs
