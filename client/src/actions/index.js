@@ -31,23 +31,6 @@ export const setError = (err) => {
 export const addSmurf = (smurf) => {
     return (dispatch => {
 
-
-       /* if((smurf.name === "") || (smurf.nickname === "") || (smurf.position === "")) {
-            dispatch(setError("Smurf data does not includes a name, nickname and position field"));
-        } else {
-
-            dispatch({type:FETCHING_QUOTE_START});
-
-            axios
-            .post('http://localhost:3333/smurfs',smurf)
-            .then(res=> {
-                dispatch({type:FETCHING_QUOTE_SUCCESS, payload:res.data});
-            })
-            .catch(err => {
-                dispatch({type:FETCHING_QUOTE_FAIL, payload: err.message});
-            });
-        }*/
-
         if(smurf.name === "") {
             dispatch(setError("Smurf data does not includes a name"));
         } else if (smurf.nickname === "") {

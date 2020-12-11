@@ -12,10 +12,8 @@ export class SmurfDisplay extends React.Component {
     }
 
     render() {
-
-
         return(<div>
-            {this.props.smurfs.map(smurf => <Smurf key={smurf.id} smurf={smurf}/>)}
+            {this.props.isFetching ? <div>Loading</div> : <div>{this.props.smurfs.map(smurf => <Smurf key={smurf.id} smurf={smurf}/>)}</div>}
         </div>)
     }
 }
