@@ -27,6 +27,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
+- A `store` holds the whole state tree of your application.
+- An `reducers` are functions that mutate a `store`.
+- An `actions` are functions that show ways how to mutate `store`.
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
 - Application state is the "global" state that all components in the component tree can access.
