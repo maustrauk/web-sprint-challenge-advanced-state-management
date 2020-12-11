@@ -22,7 +22,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What problem does the context API help solve?
+
+- The Context API was created to solve a specific problem in react, sharing state down a component tree. Similar to the solution that Redux and React-Redux libraries solve, this solution prevents prop drilling. Prop drilling is when you have to continuously pass props down through a component tree in order for a component “way down” in the application to use that prop. 
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+A: Reducers - functions 
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
