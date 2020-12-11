@@ -34,6 +34,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - I used component state to save user input in form and also used application state when form is submitted.
 
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+- Thunks are the recommended middleware for basic Redux side effects logic, including complex synchronous logic that needs access to the store, and simple async logic like AJAX requests.
+- It inserts axios requests and promises in our `actions`
+
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
