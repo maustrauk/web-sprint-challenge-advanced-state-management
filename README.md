@@ -40,6 +40,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
 
+- My favorite is Context API, because it is much simple to connect and understand it in compare to Redux.
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
