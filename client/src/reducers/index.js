@@ -14,23 +14,27 @@ const reducer = (state = initialState, action)=>{
             isFetching: true,
             err: ""
         });
+
         case(FETCHING_QUOTE_SUCCESS):
         return({
             ...state,
             smurfs: action.payload,
             isFetching: false
         });
+
         case(FETCHING_QUOTE_FAIL):
         return({
             ...state,
             err: action.payload,
             isFetching: false
         })
+
         case(SET_ERROR):
         return({
             ...state,
             err: action.payload
         })
+        
         default:
             return state;
     }

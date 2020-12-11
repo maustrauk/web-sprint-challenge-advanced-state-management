@@ -53,9 +53,9 @@ You are expected to be able to answer questions in these areas. Your responses c
 ### Task 2: Project Requirements
 Your finished project must include all of the following requirements:
 
-* [ ] Plan and implement how you are going to manage your state for your application
-* [ ] You _must_ use Redux as your state management system
-* [ ] Complete the tasks listed within:
+* [*] Plan and implement how you are going to manage your state for your application
+* [*] You _must_ use Redux as your state management system
+* [*] Complete the tasks listed within:
   * `./reducers/index.js`
   * `./actions/index.js`
   * `./index.js`
@@ -63,7 +63,7 @@ Your finished project must include all of the following requirements:
   * `./components/AddForm.js`
   * `./components/Smurf.js`
   * `./components/SmurfDisplay.js`
-* [ ] You completed application should do the following:
+* [*] You completed application should do the following:
   * Fetch and display data from the included server code on mounting.
   * Provide the user a form for adding in the Name, Position, Nickname and Description of a new Smurf.
   * Allow new smurfs to be added to the list when the submit smurf button is pressed.
@@ -80,7 +80,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 For submission, please setup the webhook needed to push your submission to codegrade. 
 
-* [ ] [Visit this link for instuctions on how to setup webhooks for codegrade.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
+* [*] [Visit this link for instuctions on how to setup webhooks for codegrade.](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
 
 **Note that you can ignore the npm run:test:watch command**
 
